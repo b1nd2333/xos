@@ -47,7 +47,7 @@ func Login(num int, publicKey, privateKey, proxyStr string) string {
 	loginModel.WalletAddress = publicKey
 	loginModel.SignMessage = msg
 	loginModel.Signature = signature
-	loginModel.Referrer = "YNMOLP"
+	loginModel.Referrer = ""
 
 	marshal, _ := json.Marshal(loginModel)
 
